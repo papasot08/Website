@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html>
+    <style>
+
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+pre {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.dark-mode {
+  background-color: #1d1d1d;
+  color: white;
+}
+.columns {
+  display: flex;
+}
+.columns > div {
+  width:14%;
+}
+
+button {
+      float: right;
+      font-family: 'Trebuchet MS', sans-serif;
+}
+
+a:link {
+  color: #ba84fb;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #9d54fc;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d5b5fc;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+</style>
+
+    <body>
+
+        <h1>
+             Hello, im Papasot! <button id="dark_mode_toggle">Toggle dark mode</button>
+        </h1>
+
+        <script>
+        function dark_mode_toggle() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+        const toggleButton = document.getElementById("dark_mode_toggle");
+  const body = document.body;
+
+  // Load dark mode state from localStorage
+  const darkMode = localStorage.getItem("darkMode");
+
+  if (darkMode === "enabled") {
+    body.classList.add("dark-mode");
+    toggleButton.textContent = "Disable Dark Mode";
+  }
+
+  toggleButton.addEventListener("click", () => {
+    const isDark = body.classList.contains("dark-mode");
+    
+    if (isDark) {
+      body.classList.remove("dark-mode");
+      localStorage.setItem("darkMode", "disabled");
+      toggleButton.textContent = "Enable Dark Mode";
+    } else {
+      body.classList.add("dark-mode");
+      localStorage.setItem("darkMode", "enabled");
+      toggleButton.textContent = "Disable Dark Mode";
+    }
+  });
+        </script>
+
+        <p>
+            You may know me from the Internet or from real life.
+            I made this website to showcase cool websites and other creations. Now that the internet is full of corporate giants and ads, 
+            i just wanted to make a "safe space" where people can get inspired by the cool things other people are up to. Enjoy!!! 
+        </p>
+
+<hr>
+        <h2>
+            Cool YouTubers
+        </h2>
+    <div class="columns">
+
+<div>
+    <b>Science</b>
+    <pre>
+<a href="https://www.youtube.com/@DrPlantsss" target="_blank">DrPlants</a>
+
+<a href="https://www.youtube.com/@thethoughtemporium" target="_blank">The thought empoprium</a>
+
+<a href="https://www.youtube.com/@NileRed" target="_blank">Nile red</a>
+
+<a href="https://www.youtube.com/@NileBlue" target="_blank">Nile blue</a>
+
+<a href="https://www.youtube.com/@mrgreenguy" target="_blank">Nile Green <em>(MrGreenGuy)</em></a>
+
+<a href="https://www.youtube.com/@styropyro" target="_blank">Pyrostyro</a>
+
+<a href="https://www.youtube.com/@williamosman" target="_blank">William osman</a>
+
+<a href="https://www.youtube.com/@TheBackyardScientist" target="_blank">The back yard scientist </a>
+
+<a href="https://www.youtube.com/@veritasium" target="_blank">Veritasium</a>
+
+<a href="https://www.youtube.com/@JoelCreates" target="_blank">Joel creates</a>
+
+<a href="https://www.youtube.com/@hacksmith" target="_blank">Hacksmith industries</a>
+
+<a href="https://www.youtube.com/@besmart" target="_blank">Be smart</a>
+
+<a href="https://www.youtube.com/@LogicallyAnswered" target="_blank">Logically answered </a>
+
+<a href="https://www.youtube.com/@SteveMould" target="_blank">Steve mould</a>
+
+<a href="https://www.youtube.com/@TheActionLab" target="_blank">The action lab</a>
+
+<a href="https://www.youtube.com/@brainiac75" target="_blank">Brainiac75</a>
+
+<a href="https://www.youtube.com/@kurzgesagt" target="_blank">Kurzgesagt</a>
+
+<a href="https://www.youtube.com/@SciShow" target="_blank">The sci show</a>
+
+<a href="https://www.youtube.com/@TomScottGo" target="_blank">Tom scott</a>
+
+<a href="https://www.youtube.com/@bps.shorts" target="_blank">Bps shorts</a>
+
+<a href="https://www.youtube.com/@BPSspace" target="_blank">Bps space</a>
+</div>
+
+<div>
+    <b>Tech</b>
+    <pre>
+<a href="https://www.youtube.com/@LinusTechTips" target="_blank">Ltt</a>
+
+<a href="https://www.youtube.com/@nationsquid" target="_blank">Nation squid</a>
+
+<a href="https://www.youtube.com/@The8BitGuy" target="_blank">The 8 bit guy</a>
+
+<a href="https://www.youtube.com/@Mrwhosetheboss" target="_blank">Mrwhosetheboss</a>
+
+<a href="https://www.youtube.com/@ThioJoe" target="_blank">Thio joe</a>
+
+<a href="https://www.youtube.com/@bogxd" target="_blank">Bog</a>
+
+<a href="https://www.youtube.com/@mkbhd" target="_blank">MKBHD</a>
+
+<a href="https://www.youtube.com/@austinevans" target="_blank">Austin Evans</a>
+
+<a href="~" target="_blank">Gamers nexus</a>
+
+<a href="~" target="_blank">Dawid does tech stuff </a>
+
+<a href="~" target="_blank">Techlinked</a>
+
+<a href="~" target="_blank">Short cirquit</a>
+
+<a href="~" target="_blank">Luke miani</a>
+
+<a href="~" target="_blank">The apple cyrcle</a>
+
+<a href="~" target="_blank">Dave 2d</a>
+
+<a href="~" target="_blank">Lgr</a>
+
+<a href="~" target="_blank">MacAdress</a>
+
+<a href="~" target="_blank">Max tech</a>
+
+<a href="~" target="_blank">Snazzy labs</a>
+
+<a href="~" target="_blank">Network Chuck</a>
+
+<a href="~" target="_blank">Action Retro</a>
+
+<a href="~" target="_blank">Macho Nacho Productions</a>
+
+<a href="~" target="_blank">James Channel</a>
+
+<a href="~" target="_blank">Low Level</a>
+
+<a href="~" target="_blank">CyberFlow</a>
+
+<a href="~" target="_blank">Polymatt</a>
+
+<a href="~" target="_blank">Joey Does Tech </a>
+
+<a href="~" target="_blank">Posy </a>
+    </pre>
+</div>
+
+<div>
+    <b>Documentaries/movies</b>
+    <pre>
+<a href="~" target="_blank">Sticks</a>
+
+<a href="~" target="_blank">The thughty2</a>
+
+<a href="~" target="_blank">Fern</a>
+
+<a href="~" target="_blank">Leminno</a>
+
+<a href="~" target="_blank">The president past</a>
+
+<a href="~" target="_blank">Corridor digital</a>
+
+<a href="~" target="_blank">Corridor crew</a>
+
+<a href="~" target="_blank">Cleo abram</a>
+
+<a href="~" target="_blank">The infographic show</a>
+
+<a href="~" target="_blank">Cold fuision</a>
+
+<a href="~" target="_blank">Zach King</a>
+
+<a href="~" target="_blank">Cnet</a>
+
+<a href="~" target="_blank">Jet lag</a>
+
+<a href="~" target="_blank">Alex O'Connor</a>
+
+<a href="~" target="_blank">Reuben Schmitz</a>
+
+<a href="~" target="_blank">Magnets media</a>
+
+<a href="~" target="_blank">Lagarto Films</a>
+
+<a href="~" target="_blank">Pandemonium</a>
+
+<a href="~" target="_blank">CHUPPL</a>
+
+<a href="~" target="_blank">Low Spec Gamer</a>
+
+<a href="~" target="_blank">Alan Becker</a>
+
+<a href="~" target="_blank">Hoog</a>
+    </pre>
+</div>
+
+<div>
+    <b>Information</b>
+    <pre>
+<a href="~" target="_blank">Visual venture</a>
+
+<a href="~" target="_blank">The science elf</a>
+
+<a href="~" target="_blank">Brew</a>
+
+<a href="~" target="_blank">Good enough </a>
+
+<a href="~" target="_blank">Sam Onella academy</a>
+
+<a href="~" target="_blank">Lessons in meme culture </a>
+
+<a href="~" target="_blank">Pointless knowledge </a>
+
+<a href="~" target="_blank">Answer in progress</a>
+
+<a href="~" target="_blank">ZackDfilms</a>
+
+<a href="~" target="_blank">Future proof</a>
+
+<a href="~" target="_blank">Jartoon</a>
+
+<a href="~" target="_blank">Megalag</a>
+
+<a href="~" target="_blank">Vince vintage</a>
+
+<a href="~" target="_blank">Vox</a>
+
+<a href="~" target="_blank">The armchair historian </a>
+
+<a href="~" target="_blank">KnowledgeHusk</a>
+
+<a href="~" target="_blank">Adam Ragusea</a>
+
+<a href="~" target="_blank">Vincent Chan $</a>
+
+<a href="~" target="_blank">PolyMatter</a>
+
+<a href="~" target="_blank">Re: Design</a>
+    </pre>
+</div>
+
+<div>
+    <b>Cool stuff</b>
+    <pre>
+<a href="~" target="_blank">Preston Goes</a>
+
+<a href="~" target="_blank">Ryan trahan</a>
+
+<a href="~" target="_blank">Coffeezilla</a>
+
+<a href="~" target="_blank">Max fosh</a>
+
+<a href="~" target="_blank">Ricks f1 addiction</a>
+
+<a href="~" target="_blank">The Bird</a>
+
+<a href="~" target="_blank">Burdie</a>
+
+<a href="~" target="_blank">Tokemon</a>
+
+<a href="~" target="_blank">PewDiePie</a>
+
+<a href="~" target="_blank">TheOds 1s out</a>
+
+<a href="~" target="_blank">dannocaldrwas</a>
+
+<a href="~" target="_blank">Astro Kobi</a>
+
+<a href="~" target="_blank">Steven he</a>
+
+<a href="~" target="_blank">Rainbolt</a>
+
+<a href="~" target="_blank">Ray william johnson</a>
+
+<a href="~" target="_blank">Chez</a>
+
+<a href="~" target="_blank">Aaron Rheins</a>
+
+<a href="~" target="_blank">Nutshell animation </a>
+
+<a href="~" target="_blank">Jorden Tually </a>
+
+<a href="~" target="_blank">Soeedupbricks</a>
+
+<a href="~" target="_blank">Mr reboot</a>
+
+<a href="~" target="_blank">Donut</a>
+
+<a href="~" target="_blank">Dricer 61</a>
+
+<a href="~" target="_blank">Cracc bacc</a>
+
+<a href="~" target="_blank">President Chay</a>
+
+<a href="~" target="_blank">SmartSnack</a>
+
+<a href="~" target="_blank">Outdoor Boys</a>
+
+<a href="~" target="_blank">Foureyes Furniture</a>
+
+<a href="~" target="_blank">Make With Miles</a>
+
+<a href="~" target="_blank">trainer winny</a>
+
+<a href="~" target="_blank">excessorizeme</a>
+
+<a href="~" target="_blank">Stuff Made Here</a>
+
+<a href="~" target="_blank">VWestlife</a>
+
+<a href="~" target="_blank">Ok so…</a>
+
+<a href="~" target="_blank">Posy</a>
+
+<a href="~" target="_blank">Retra Cast</a>
+
+<a href="~" target="_blank">Nathan Baggs</a>
+
+<a href="~" target="_blank">findlepop</a>
+
+<a href="~" target="_blank">President Chay</a>
+
+<a href="~" target="_blank">Alan Zucconi</a>
+
+<a href="~" target="_blank">FaceDev</a>
+
+<a href="~" target="_blank">BadHairlineProductions</a>
+    </pre>
+</div>
+
+<div>
+    <b>Bringusing</b>
+    <pre>
+<a href="~" target="_blank">Bringus Studios</a>
+
+<a href="~" target="_blank">Thomas Burns</a>
+
+<a href="~" target="_blank">John bringus</a>
+
+<a href="~" target="_blank">Tranium</a>
+
+<a href="~" target="_blank">Guinny</a>
+
+<a href="~" target="_blank">Zacca</a>
+
+<a href="~" target="_blank">Jeff Geerling</a>
+
+<a href="~" target="_blank">Network chuck</a>
+
+<a href="~" target="_blank">Basically homeless</a>
+
+<a href="~" target="_blank">JerryRigEverything</a>
+
+<a href="~" target="_blank">Chris da cow</a>
+
+<a href="~" target="_blank">Chris Doel</a>
+
+<a href="~" target="_blank">James Channel</a>
+
+<a href="~" target="_blank">Hacksmith industries </a>
+
+<a href="~" target="_blank">I did a thing</a>
+
+<a href="~" target="_blank">Toast </a>
+
+<a href="~" target="_blank">Nikhil Menda</a>
+
+<a href="~" target="_blank">Happychoice</a>
+
+<a href="~" target="_blank">Tyler McVicker</a>
+
+<a href="~" target="_blank">Osprey8010</a>
+
+<a href="~" target="_blank">Aaed Musa</a>
+
+<a href="~" target="_blank">Waterjet Channel</a>
+
+<a href="~" target="_blank">Camden Bowen</a>
+    </pre>
+</div>
+
+<div>
+<b>Minecraft</b>   
+    <pre>
+<a href="~" target="_blank">KasaiSora</a>
+
+<a href="~" target="_blank">intel edits </a>
+
+<a href="~" target="_blank">Gamerboy80</a>
+
+<a href="~" target="_blank">Fizzy</a>
+
+<a href="~" target="_blank">iShoya</a>
+
+<a href="~" target="_blank">Mumbo jumbo</a>
+
+<a href="~" target="_blank">Grian</a>
+
+<a href="~" target="_blank">Captain spaclez</a>
+
+<a href="~" target="_blank">DanTDM</a>
+
+<a href="~" target="_blank">KasaiSora</a>
+
+<a href="~" target="_blank">Rekrap1</a>
+
+<a href="~" target="_blank">Stampy longhead</a>
+
+<a href="~" target="_blank">mrpancake4343</a>
+
+<a href="~" target="_blank">Rollyegg</a>
+
+<a href="~" target="_blank">matbatwings</a>
+
+<a href="~" target="_blank">Purples</a>
+    </pre>
+</div>
+
+
+</div>
+<hr>
+        <h2>
+            Cool Games
+        </h2>
+    <div class="columns">
+
+<div>
+    <b>Adventure</b>
+    <pre>
+<a href="~" target="_blank">Sheepy</a>
+
+<a href="~" target="_blank">The Supper</a>
+
+<a href="~" target="_blank">Babbdi</a>
+
+<a href="~" target="_blank">Grimhook</a>
+
+<a href="~" target="_blank">Lilly's Well</a>
+
+<a href="~" target="_blank">Psychopomp</a>
+
+<a href="~" target="_blank">Life is Strange</a>
+
+<a href="~" target="_blank">Bird Gut</a> 
+
+<a href="~" target="_blank">Blood Spear</a>
+
+<a href="~" target="_blank">Shepherd of Light</a>
+
+<a href="~" target="_blank">Pale Abyss</a>
+    </pre>
+</div>
+
+<div>
+    <b>Cozy</b>
+    <pre>
+<a href="~" target="_blank">Outpath</a>
+
+<a href="~" target="_blank">Resonance of the ocean</a>
+
+<a href="~" target="_blank">Such Art</a>
+
+<a href="~" target="_blank">Tukoni Prologue</a>
+
+<a href="~" target="_blank">Red Planet Frming</a>
+
+<a href="~" target="_blank">Superflight</a>
+
+<a href="~" target="_blank">Neon Beats</a>
+
+<a href="~" target="_blank">Look at this Knight</a>
+
+<a href="~" target="_blank">Fros Runner</a>
+
+<a href="~" target="_blank">I wanna maker</a>
+
+<a href="~" target="_blank">Landfal Archives</a>
+
+<a href="~" target="_blank">Super Tux</a>
+
+<a href="~" target="_blank">Balantica</a>
+
+<a href="~" target="_blank">Sheepy</a>
+
+<a href="~" target="_blank">Grapples Galore</a>
+
+<a href="~" target="_blank">Sky: Children of the 
+Light</a>
+
+<a href="~" target="_blank">Fishing Planet</a>
+
+<a href="~" target="_blank">Anno 1800</a>
+    </pre>
+</div>
+
+<div>
+    <b>Fun</b>
+    <pre>
+<a href="~" target="_blank">Grimm's Hollow</a>
+
+<a href="~" target="_blank">Perspective</a>
+
+<a href="~" target="_blank">Alpaca Stacka</a>
+
+<a href="~" target="_blank">Disfigure</a>
+
+<a href="~" target="_blank">The Expendabros</a>
+
+<a href="~" target="_blank">Farmer Against Potatoes 
+Idle</a>
+
+<a href="~" target="_blank">FragPunk</a>
+
+<a href="~" target="_blank">Gun Devil</a>
+
+<a href="~" target="_blank">Iron Snout</a>
+
+<a href="~" target="_blank">Island Saver</a>
+
+<a href="~" target="_blank">Meteor 60 Seconds!</a>
+
+<a href="~" target="_blank">Outcore: 
+Desktop Adventure</a>
+
+<a href="~" target="_blank">Rayman Legends</a>
+
+<a href="~" target="_blank">There Is No Game: 
+Jam Edition 2015</a>
+
+<a href="~" target="_blank">Ultimate Custom Night</a>
+
+<a href="~" target="_blank">Vecter</a>
+
+<a href="~" target="_blank">Walking Simulator</a>
+    </pre>
+</div>
+
+<div>
+    <b>Multiplayer</b>
+    <pre>
+<a href="~" target="_blank">Counter-Strike 2</a>
+
+<a href="~" target="_blank">Dark and Darker</a>
+
+<a href="~" target="_blank">Goose Goose Duck</a>
+
+<a href="~" target="_blank">Half-Life 2: 
+Deathmatch</a>
+
+<a href="~" target="_blank">Half-Life 
+Deathmatch: Source</a>
+
+<a href="~" target="_blank">Halo: The Master Chief 
+Collection</a>
+
+<a href="~" target="_blank">Muck</a>
+
+<a href="~" target="_blank">Once Human</a>
+
+<a href="~" target="_blank">One-armed cook</a>
+
+<a href="~" target="_blank">Puck</a>
+
+<a href="~" target="_blank">SCP: Secret 
+Laboratory</a>
+
+<a href="~" target="_blank">STAR WARS: 
+The Old Republic</a>
+
+<a href="~" target="_blank">Stumble Guys</a>
+
+<a href="~" target="_blank">Super Animal Royale</a>
+
+<a href="~" target="_blank">Supermarket Together</a>
+
+<a href="~" target="_blank">War Thunder</a>
+
+<a href="~" target="_blank">Deathly Stillness</a>
+    </pre>
+</div>
+
+<div>
+    <b>Puzzles</b>
+    <pre>
+<a href="~" target="_blank">Cube Escape: Paradox</a>
+
+<a href="~" target="_blank">Gravitas</a>
+
+<a href="~" target="_blank">Helltaker</a>
+
+<a href="~" target="_blank">Slayaway Camp</a>
+
+<a href="~" target="_blank">What Never Was</a>
+    </pre>
+</div>
+
+<div>
+    <b>Shooters</b>
+    <pre>
+<a href="~" target="_blank">Delta Force</a>
+
+<a href="~" target="_blank">Enlisted</a>
+
+<a href="~" target="_blank">The First Descendant</a>
+
+<a href="~" target="_blank">FragPunk</a>
+
+<a href="~" target="_blank">Hlaf-Life 2</a>
+
+<a href="~" target="_blank">Half-Life: 
+Deathmatch</a>
+
+<a href="~" target="_blank">Half-Life 
+Deathmatch: Source</a>
+
+<a href="~" target="_blank">Halo: The Master Chief 
+Collection</a>
+
+<a href="~" target="_blank">Operation: 
+Harsh Doorstop</a>
+
+<a href="~" target="_blank">Polygon</a>
+
+<a href="~" target="_blank">Snake Force</a>
+
+<a href="~" target="_blank">Splitgate</a>
+
+<a href="~" target="_blank">Warframe</a>
+    </pre>
+</div>
+
+
+</div>
+
+<hr>
+
+        <h2>
+            Cool Websites
+        </h2>
+    <div class="columns">
+
+<div>
+    <b>Research</b>
+    <pre>
+<a href="https://www.virustotal.com/"target="_blank">Virustotal</a>
+
+<a href="https://app.any.run/"target="_blank">Interactive
+Malware Analaysis</a>
+
+<a href="https://app.any.run/"target="_blank">Global Environmental
+Map</a>
+
+<a href="https://www.mapquest.com/"target="_blank">Map Quest</a>
+
+<a href="https://scholar.google.com/"target="_blank">Google Scholar</a>
+
+<a href="https://duckduckgo.com/"target="_blank">Duck Duck Go</a>
+
+    </pre>
+</div>
+
+<div>
+    <b>Self Hosting</b>
+    <pre>
+~
+    </pre>
+</div>
+
+<div>
+    <b>Fun</b>
+    <pre>
+~
+    </pre>
+</div>
+
+<div>
+    <b>Multiplayer</b>
+    <pre>
+~
+    </pre>
+</div>
+
+<div>
+    <b>Puzzles</b>
+    <pre>
+~
+    </pre>
+</div>
+
+<div>
+    <b>Shooters</b>
+    <pre>
+~
+    </pre>
+</div>
+
+</div>
+
+<hr>
+    </body>
+</html>
